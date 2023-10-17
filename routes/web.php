@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('guests.welcome');
+    return redirect(env("APP_FRONTED"));
 });
 
 Route::get('/dashboard', function () {
